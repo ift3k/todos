@@ -9,6 +9,7 @@ class PostController extends Controller
     public function new() {
         return view('new');
     }   
+
 }
 
     

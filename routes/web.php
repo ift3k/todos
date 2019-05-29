@@ -32,3 +32,12 @@ Route::get('/todos', [
 Route::get('/new', [
 	'uses' => 'PostController@new'
 ]);
+
+Route::post('/create/todo', [
+	'uses' => 'TodosController@store'
+]);
+
+Route::get('/delete/todo/{id}', [
+	'uses' => 'TodosController@delete',
+	'as' => 'todo.delete'
+]);
